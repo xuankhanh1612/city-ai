@@ -80,6 +80,14 @@ npm run dev
 
 Visit [http://localhost:5173](http://localhost:5173) to enter the 3D Metropolis.
 
+### Deploy the frontend to GitHub Pages
+
+The workflow in `.github/workflows/deploy-pages.yml` builds and deploys the frontend whenever changes are pushed to `main` (or when manually started from the Actions tab). For the first deployment, open **Settings → Pages** in the repository and set **Build and deployment → Source** to **GitHub Actions**. The published site will be:
+
+**https://xuankhanh1612.github.io/city-ai/**
+
+GitHub Pages hosts only static files. The 3D city and its bundled assets are available there, but backend-powered features (projects, agents, chat, approvals, and telemetry) still require the FastAPI backend; they are not deployed by this workflow.
+
 ---
 
 ## 🧪 Testing

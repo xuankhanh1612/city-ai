@@ -14,8 +14,8 @@ import { BLOCK_INNER_HALF, DistrictZone, districtZones } from '../../simulation/
  */
 
 const ROAD_W = 5.2;
-const MODEL_BASE = '/models/kenney';
-const PH_BASE = '/textures/polyhaven';
+const MODEL_BASE = `${import.meta.env.BASE_URL}models/kenney`;
+const PH_BASE = `${import.meta.env.BASE_URL}textures/polyhaven`;
 
 // ------------------------------------------------------------------------------------------------
 // Photo-scanned PBR textures (Poly Haven, CC0)
